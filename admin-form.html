@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Создание инвойса</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Создание инвойса</h1>
+    <form action="generate-invoice.php" method="post">
+        <label for="clientId">ID клиента:</label>
+        <input type="text" id="clientId" name="clientId" required><br><br>
+
+        <label for="trackCode">Трек-код:</label>
+        <input type="text" id="trackCode" name="trackCode" required><br><br>
+
+        <button type="submit">Создать инвойс</button>
+    </form>
+</body>
+</html>

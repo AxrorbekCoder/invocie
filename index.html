@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма данных клиента</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Введите ваши данные</h1>
+    <form id="clientForm" action="submit.php" method="post" enctype="multipart/form-data">
+        <label for="pinfl">ПИНФЛ:</label>
+        <input type="text" id="pinfl" name="pinfl" required><br><br>
+        
+        <label for="phone">Телефонный номер:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+        
+        <label for="address">Полный адрес:</label>
+        <input type="text" id="address" name="address" required><br><br>
+        
+        <label for="landmark">Ориентир (необязательно):</label>
+        <input type="text" id="landmark" name="landmark"><br><br>
+        
+        <label for="photo">Паспортное фото:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+        
+        <button type="submit">Отправить</button>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
